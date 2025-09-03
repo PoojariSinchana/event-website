@@ -27,8 +27,8 @@ export default function RecommendedEvents() {
     const fetchEvents = async () => {
       try {
         const res = await fetch(
-          `https://gg-backend-assignment.azurewebsites.net/api/Events?code=${process.env.REACT_APP_API_KEY}&page=${page}&type=upcoming`
-      );
+           `https://gg-backend-assignment.azurewebsites.net/api/Events?code=${process.env.REACT_APP_API_KEY}&type=reco`
+          );
         const data = await res.json();
         console.log("API raw data:", data);
 
